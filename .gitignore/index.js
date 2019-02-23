@@ -247,7 +247,7 @@ client.on('message', message => {
 client.on('message', message => {
     if(message.content === prefix + "ping") {
         message.channel.send("Calcul ...").then(message => {
-        message.edit('pong !'+ Math.round(client.ping) + 'ms')
+        message.edit('ping : '+ Math.round(client.ping) + 'ms')
         })
     }
 });
