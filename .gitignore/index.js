@@ -158,6 +158,7 @@ client.on('message', message =>{
             .addField("!twitter", "Voir le twitter du créateur | av = tt")
             .addField("!infodiscord", "Afiche les Informations du serveur discord")
             .addField("!infobot", "Afficher les infos du Bot")
+            .addField("!ping", "Affiche les pings du Bot")
             .setFooter("Bientôt de nouvelles règles !")
         message.channel.sendEmbed(help)
     }
