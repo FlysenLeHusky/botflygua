@@ -258,7 +258,7 @@ client.on('message', message => {
     if(message.content === prefix + "say") {
         message.delete()
         const say = new discord.RichEmbed()
-        .setColor("")
+        .setColor("#DBA901")
         .setDescription("" + message.author.username + "says: " + args.join(" "))
         message.channel.sendEmbed(say)
     }
