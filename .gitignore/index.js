@@ -260,6 +260,6 @@ client.on('message', message => {
         const say = new discord.RichEmbed()
         .setColor("#DBA901")
         .setDescription("" + message.author.username + "says: " + args.join(" "))
-        message.channel.sendEmbed(say)
+        message.channel.send({say})
     }
 })
