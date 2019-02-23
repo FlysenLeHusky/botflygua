@@ -242,3 +242,12 @@ client.on('message', message => {
     if(message.content === prefix + "site")
     message.reply(":white_check_mark: Nous sommes désoler mais le site web du **BOT** est encore en création :cry:")
 })
+
+/*ping*/
+client.on('message', message => {
+    if(message.content === prefix + "ping") {
+        message.channel.send("Calcul ...").then(message => {
+            message.edit('pong !' + Math.round(bot.ping) + 'ms')
+        })
+    }
+});
