@@ -10,7 +10,7 @@ const db = low(adapter);
 db.defaults({ histoires: [], xp: []}).write()
 
 
-client.login('NTQ4NzQ4MzEzMjAxOTk5ODg5.D1J14w.rbntqP4goJZnIb5mr-UYFHY8TSY');
+client.login(process.env.TOKEN);
 
 client.on('ready', () => {
     console.log("Bot lancé")
